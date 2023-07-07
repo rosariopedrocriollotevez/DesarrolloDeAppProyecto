@@ -9,60 +9,74 @@
         android:id="@+id/txt_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Nombre"
+        android:hint="Nombre"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintTop_toTopOf="parent" />
     <EditText
         android:id="@+id/txt_apellido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="211dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Apellido"
+        android:hint="Apellido"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="177dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombre" />
     <EditText
         android:id="@+id/txt_edad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="84dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Edad"
+        android:hint="Edad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_apellido" />
     <EditText
         android:id="@+id/txt_universidad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Universidad"
+        android:hint="Universidad"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="322dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_edad" />
 
     <EditText
         android:id="@+id/txt_correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Correo  electronico"
+        android:hint="correo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="400dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_universidad" />
 
     <Button
         android:id="@+id/btn_registrarse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="Registrarse"
+        android:onClick="Registrarse"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="488dp" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_correo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

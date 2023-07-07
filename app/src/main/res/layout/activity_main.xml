@@ -5,25 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <EditText
         android:id="@+id/txt_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="138dp"
         android:ems="10"
+        android:hint="Usuario"
         android:inputType="text"
-        android:text="Usuario"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txt_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_width="194dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
+        android:hint="Contraseña"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -34,16 +35,21 @@
         android:id="@+id/tbn_iniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="50dp"
         android:text="Iniciar Sesion"
-        app:layout_constraintTop_toBottomOf="@+id/txt_password"
-        tools:layout_editor_absoluteX="154dp" />
+        android:onClick="Iniciar Sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+
     <Button
         android:id="@+id/btn_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="50dp"
+        android:onClick="guardar"
         android:text="Registro"
-        app:layout_constraintTop_toBottomOf="@+id/tbn_iniciar"
-        tools:layout_editor_absoluteX="171dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbn_iniciar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
