@@ -1,8 +1,6 @@
 package com.example.dafinal;
-
 import android.app.Activity;
 import android.os.Bundle;
-
 public class registro extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
